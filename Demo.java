@@ -1,17 +1,17 @@
 
 class Demo {  
 	public static void main(String[] args) {
-		String a = new String("hallo ");
-		a.concat("doei");
-		System.out.println(a);
-		a = a.concat("doei");
-		StringBuilder sba = new StringBuilder("hoi ");
-		sba.append("houdoe");
-		System.out.println(a);
-		System.out.println(sba);
+		Rekenmachine r = new Rekenmachine();
+//		r.optellen(5, 7);
+	//	r.optellen();
+		r.optellen(6,5,4,8,9,1001);
+		int[] getallen = new int[4];
+		r.optellen(getallen);
 	}
 }
 
-// hallo
-// hoi houdoe
-
+class Rekenmachine{
+	void optellen(int... a) {  // varargs
+		System.out.println(a[3]);
+	}
+}
